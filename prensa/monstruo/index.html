@@ -164,7 +164,15 @@
 
   /* ---------- Imágenes / placeholders ---------- */
   .figure{ margin:0; padding:16px var(--pad); }
-  .figure--full{ padding-left:0; padding-right:0; }
+
+  /* La portada va centrada a 561px, como en el blast de febrero —
+     no a sangre completa. */
+  .figure--cover picture{ display:block; }
+  .figure--cover img,
+  .figure--cover .placeholder{
+    max-width:561px;
+    margin-inline:auto;
+  }
 
   .placeholder{
     display:grid;
@@ -185,6 +193,7 @@
     text-transform:uppercase;
   }
   .placeholder span{ font-size:13px; }
+  .placeholder--square{ aspect-ratio:1/1; }
 
   /* ---------- Cuerpo ---------- */
   .lede{
@@ -371,13 +380,23 @@
     Viernes 14 de agosto de 2026 · Revéz Records · Adelanto del EP «Al Derecho… y Los Revéz»
   </p>
 
-  <!-- Sustituir por:
-       <img src="/assets/img/monstruo-portada.jpg"
-            alt="Portada de «Monstruo», de Los Revéz" width="660" height="440"> -->
-  <figure class="figure figure--full">
-    <div class="placeholder">
-      <b>Imagen principal</b>
-      <span>Portada o foto de prensa · 1320 × 880 px · JPG</span>
+  <!-- Cuando la portada esté en /assets/img/, sustituir el <figure> completo por:
+
+  <figure class="figure figure--cover">
+    <picture>
+      <source srcset="/assets/img/monstruo-1320.avif" type="image/avif">
+      <source srcset="/assets/img/monstruo-1320.webp" type="image/webp">
+      <img src="/assets/img/monstruo-1320.jpg"
+           alt="Portada de «Monstruo», de Los Revéz"
+           width="1320" height="1320"
+           fetchpriority="high">
+    </picture>
+  </figure>
+  -->
+  <figure class="figure figure--cover">
+    <div class="placeholder placeholder--square">
+      <b>Portada del sencillo</b>
+      <span>«Monstruo» · 1320 × 1320 px · cuadrada</span>
     </div>
   </figure>
 
