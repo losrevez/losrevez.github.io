@@ -1,75 +1,30 @@
 <!DOCTYPE html>
-<!--
-  ============================================================================
-  REVÉZ RECORDS — COMUNICADO DE PRENSA · «MONSTRUO»
-  ============================================================================
-  ESTADO: versión provisional en losrevez.github.io — el dominio aún no apunta.
-
-  ANTES DE PUBLICAR EN losrevez.com, deshacer los cuatro cambios provisionales
-  (todos marcados con  ✱ PROVISIONAL  más abajo):
-    1. Quitar  <meta name="robots" content="noindex">
-    2. Restaurar  <link rel="canonical">  y  og:url / og:image / twitter:card
-    3. Restaurar  <link rel="icon">  cuando exista el favicon
-    4. Cambiar el enlace de «Quiero Que Vengas» del archivo de Mailchimp
-       a  /prensa/quiero-que-vengas/
-
-  ---------------------------------------------------------------------------
-  PARA UN NUEVO COMUNICADO: copia esta carpeta y cambia lo marcado con  ★
-   1. <title> + <meta name="description">
-   2. og:title + og:description
-   3. .masthead      → logo del sello (hoy: monograma provisional "RR")
-   4. h1.headline    → titular
-   5. p.dateline     → fecha · sello · contexto
-   6. .lede + .body-copy → cuerpo
-   7. blockquote.pull → cita y atribución (o borrar el bloque)
-   8. a.cta          → pre-save / enlace a plataformas
-   9. .advisory      → aviso de contenido explícito (o borrar)
-  10. .contact       → correo de prensa
-  11. JSON-LD final  → nombre, fecha, duración, explicit
-
-  MODO BORRADOR
-  <body class="draft">  muestra la franja roja y las notas editoriales.
-  Para publicar: quitar  class="draft"  del <body>.
-
-  IMÁGENES
-  Sube los archivos a  /assets/img/  (Add file → Upload files) y sustituye
-  cada  <div class="placeholder">  por el <img> que está comentado al lado.
-  ============================================================================
--->
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- ✱ PROVISIONAL 1 — evita que Google indexe la URL de github.io y luego
-     compita con losrevez.com. Quitar cuando el dominio esté activo. -->
+<!-- Quitar esta línea cuando el texto esté aprobado y el comunicado sea público -->
 <meta name="robots" content="noindex">
 
-<!-- ★ 1 -->
 <title>Los Revéz publican «Monstruo», su segundo sencillo | Revéz Records</title>
 <meta name="description" content="Los Revéz publican «Monstruo», su segundo sencillo, el viernes 14 de agosto de 2026 por Revéz Records. Segundo adelanto del EP «Al Derecho… y Los Revéz».">
+<link rel="canonical" href="https://losrevez.com/prensa/monstruo/">
 
-<!-- ★ 2 -->
 <meta property="og:type" content="article">
 <meta property="og:locale" content="es_CO">
 <meta property="og:site_name" content="Revéz Records">
 <meta property="og:title" content="Los Revéz publican «Monstruo», su segundo sencillo">
-<meta property="og:description" content="Una carta al conocido que se burló de la música como carrera y hoy dice que el rock le parece cool. 14 de agosto.">
+<meta property="og:description" content="Una carta al conocido que se burló de la música como carrera. 14 de agosto.">
+<meta property="og:url" content="https://losrevez.com/prensa/monstruo/">
+<meta property="og:image" content="https://losrevez.com/assets/monstruo-1320.jpg">
+<meta property="og:image:width" content="1320">
+<meta property="og:image:height" content="1320">
+<meta name="twitter:card" content="summary_large_image">
 
-<!-- ✱ PROVISIONAL 2 — canonical, og:url, og:image y twitter:card apuntaban a
-     losrevez.com, que todavía no resuelve. Restaurar con el dominio:
-     <link rel="canonical" href="https://losrevez.com/prensa/monstruo/">
-     <meta property="og:url" content="https://losrevez.com/prensa/monstruo/">
-     <meta property="og:image" content="https://losrevez.com/assets/img/og-monstruo.jpg">
-     <meta property="og:image:width" content="1200">
-     <meta property="og:image:height" content="630">
-     <meta name="twitter:card" content="summary_large_image"> -->
-
-<!-- ✱ PROVISIONAL 3 — sin favicon todavía:
-     <link rel="icon" href="/assets/img/favicon.png"> -->
+<link rel="icon" href="/assets/img/favicon.png">
 
 <style>
-  /* ---------- Tokens (heredados del blast de febrero) ---------- */
   :root{
     --brand:      #87764c;
     --brand-dark: #6e5f3c;
@@ -103,7 +58,6 @@
 
   .sheet{ max-width:var(--measure); margin:0 auto; background:var(--card); }
 
-  /* ---------- Modo borrador ---------- */
   .draft-only{ display:none; }
   body.draft .draft-only{ display:block; }
 
@@ -127,7 +81,6 @@
     line-height:1.5;
   }
 
-  /* ---------- Cabecera ---------- */
   .masthead{
     display:flex;
     align-items:center;
@@ -140,7 +93,6 @@
   .masthead__label b{ display:block; font-size:14px; letter-spacing:.1em; }
   .masthead__label span{ color:var(--ink-soft); }
 
-  /* ---------- Titular ---------- */
   .headline{
     margin:26px 0 0;
     padding:0 var(--pad);
@@ -162,41 +114,12 @@
     font-style:italic;
   }
 
-  /* ---------- Imágenes / placeholders ---------- */
   .figure{ margin:0; padding:16px var(--pad); }
+  .figure--cover picture{ display:block; max-width:561px; margin-inline:auto; }
+  .figure--cover img{ width:100%; }
+  .figure--cover .placeholder{ max-width:561px; margin-inline:auto; }
 
-  /* La portada va centrada a 561px, como en el blast de febrero —
-     no a sangre completa. */
-  .figure--cover picture{ display:block; }
-  .figure--cover img,
-  .figure--cover .placeholder{
-    max-width:561px;
-    width: 100%;
-    margin-inline:auto;
-  }
 
-  .placeholder{
-    display:grid;
-    place-items:center;
-    gap:4px;
-    aspect-ratio:3/2;
-    background:#fafafa;
-    border:2px dashed #cfc7b0;
-    color:var(--ink-soft);
-    text-align:center;
-    padding:20px;
-  }
-  .placeholder b{
-    display:block;
-    color:var(--brand);
-    font-size:12px;
-    letter-spacing:.14em;
-    text-transform:uppercase;
-  }
-  .placeholder span{ font-size:13px; }
-  .placeholder--square{ aspect-ratio:1/1; }
-
-  /* ---------- Cuerpo ---------- */
   .lede{
     margin:0;
     padding:26px var(--pad) 0;
@@ -211,7 +134,6 @@
   .body-copy p:last-child{ margin-bottom:0; }
   .body-copy strong{ font-weight:700; }
 
-  /* ---------- Cita destacada ---------- */
   .pull{
     margin:26px var(--pad);
     padding:4px 0 4px 20px;
@@ -232,7 +154,6 @@
     color:var(--ink-soft);
   }
 
-  /* ---------- CTA ---------- */
   .cta-wrap{ padding:20px var(--pad) 10px; }
   .cta{
     display:block;
@@ -280,7 +201,6 @@
     font-size:11px;
   }
 
-  /* ---------- Redes ---------- */
   .follow{
     margin:0;
     padding:26px var(--pad) 4px;
@@ -303,7 +223,6 @@
   .social a:hover{ color:var(--brand); transform:translateY(-2px); }
   .social svg{ width:28px; height:28px; fill:currentColor; display:block; }
 
-  /* ---------- Contacto ---------- */
   .contact{
     padding:22px var(--pad) 26px;
     border-top:1px solid var(--rule);
@@ -326,7 +245,6 @@
   }
   .colophon svg{ width:40px; height:40px; margin:0 auto; opacity:.5; }
 
-  /* ---------- Mobile ---------- */
   @media (max-width:480px){
     :root{ --pad:18px; }
     body{ font-size:16px; }
@@ -339,7 +257,6 @@
     *{ transition:none !important; animation:none !important; }
   }
 
-  /* ---------- Impresión ---------- */
   @media print{
     body{ background:#fff; font-size:11pt; }
     .draft-bar, .draft-note, .social, .cta, .placeholder{ display:none; }
@@ -350,16 +267,12 @@
 </style>
 </head>
 
-<!-- Quitar  class="draft"  para publicar -->
 <body class="draft">
 
 <article class="sheet">
 
-  <p class="draft-bar draft-only">Borrador — para revisión de la banda · no distribuir</p>
+  <p class="draft-bar draft-only">Borrador v5 — para revisión · no distribuir</p>
 
-  <!-- ★ 3 — Monograma provisional. Con el logo real:
-       <img class="masthead__mark" src="/assets/img/logo-revez-records.png"
-            alt="Revéz Records" width="52" height="52"> -->
   <header class="masthead">
     <svg class="masthead__mark" viewBox="0 0 52 52" role="img" aria-label="Revéz Records">
       <rect width="52" height="52" rx="4" fill="#87764c"></rect>
@@ -373,12 +286,10 @@
     </p>
   </header>
 
-  <!-- ★ 4 -->
   <h1 class="headline">Los Revéz publican «Monstruo», su segundo sencillo</h1>
 
-  <!-- ★ 5 -->
   <p class="dateline">
-    Viernes 14 de agosto de 2026 · Revéz Records · Adelanto del EP «Al Derecho… y Los Revéz»
+    Viernes 14 de agosto de 2026 · Revéz Records · Segundo adelanto del EP «Al Derecho… y Los Revéz»
   </p>
 
   <figure class="figure figure--cover">
@@ -391,104 +302,62 @@
            fetchpriority="high">
     </picture>
   </figure>
-  <!-- <figure class="figure figure--cover">
-    <div class="placeholder placeholder--square">
-      <b>Portada del sencillo</b>
-      <span>«Monstruo» · 1320 × 1320 px · cuadrada</span>
-    </div>
-  </figure>
 
-  <!-- ★ 6 -->
   <p class="lede">
-    Los Revéz escriben canciones dirigidas a alguien. No sobre alguien:
-    <em>a</em> alguien, de frente y en segunda persona.
+    La banda bogotana Los Revéz publica <em>«Monstruo»</em> el viernes 14 de agosto en todas las plataformas digitales.
   </p>
 
   <div class="body-copy">
     <p>
-      En febrero fue una invitación.
-      <!-- ✱ PROVISIONAL 4 — apunta al archivo de Mailchimp hasta que exista
-           /prensa/quiero-que-vengas/ -->
-      <a href="https://us21.campaign-archive.com/?u=dd07000242c249b815bfb50ff&amp;id=251ac04a58"
-         target="_blank" rel="noopener">«Quiero Que Vengas»</a>
-      pedía que la otra persona apareciera, y no se bajó de las emisoras de rock en
-      Colombia durante cinco meses.
+      Es su segundo sencillo por Revéz Records —su propio sello— y el segundo adelanto del EP «Al Derecho… y Los Revéz». Rock guitarrero, dos minutos veinticuatro, contenido explícito.
     </p>
 
     <p>
-      «Monstruo» es la misma dirección, apuntada al revés. Es una carta al conocido que
-      durante años se burló de la música como carrera —«con esa carrera serás un
-      fracasadito», cita textual— y que hoy dice que el rock le parece cool porque le
-      sirve para levantar. La canción no lo perdona: le responde con la única amenaza que
-      le sirve a un oportunista, <em>no se te olvide que te conozco</em>. No hay moraleja
-      ni redención. Hay memoria.
+      Es también la primera vez que Diego Sáenz, baterista de la banda, toma el micrófono. Su entrada convierte el tema en una canción a dos voces: Sáenz abre, Correa responde, y así hasta el final.
+    </p>
+
+    <p>
+      Los Revéz no escriben canciones sobre alguien: las escriben a alguien, de frente y en segunda persona. «Monstruo» es una carta al conocido que durante años se burló de la música como carrera —«con esa carrera serás un fracasadito», cita textual— y que hoy dice que el rock le parece cool porque le sirve para levantar. Le responde con la única amenaza que le sirve a un oportunista: no se te olvide que te conozco. No hay moraleja ni redención. Hay memoria.
     </p>
   </div>
 
-  <!-- ★ 7 -->
   <blockquote class="pull">
     <p>
-      «Empezó como un desahogo contra una persona y terminó siendo un desahogo contra
-      todos los monstruos.»
+      «Empezó como un desahogo contra una persona y terminó siendo un desahogo contra todos los monstruos.»
     </p>
     <footer>Los Revéz</footer>
   </blockquote>
 
-  <p class="draft-note draft-only">
-    <strong>Cita pendiente de aprobación.</strong> Definir si sale a nombre de la banda
-    o de un integrante. Si va a nombre de una persona, cambiar la atribución en
-    <code>&lt;footer&gt;</code> y añadir el rol (p. ej. «Diego Sáenz, voz y guitarra»).
-  </p>
-
   <div class="body-copy">
     <p>
-      Musicalmente es rock guitarrero, directo y con humor negro. Dos minutos veinticuatro,
-      sin grasa. El español del tema no es de un solo lugar: por veinte segundos la canción
-      deja de ser una canción y se convierte en una pelea de barrio donde cada quien grita
-      en su propio acento.
-    </p>
-
-    <p>
-      Los Revéz son <strong>Diego Sáenz</strong>, <strong>Gonzalo Pizarro</strong> y
-      <strong>Diego Correa</strong>. La banda nace de los fundadores de Pirañas y el
-      cantante de Los Cocoa, y publica por su propio sello, Revéz Records.
-    </p>
-
-    <p>
-      «Monstruo» sale el viernes 14 de agosto en todas las plataformas.
+      Su debut, «Quiero Que Vengas», salió en febrero y sigue sonando en las emisoras de rock del país. «Monstruo» apunta en la misma dirección, al revés: una canción pesada y tramposa. Arranca tranquila y no se queda quieta; justo cuando uno cree que ya la tiene, la banda se va de fiesta y vuelve como si nada hubiera pasado.
     </p>
   </div>
 
-  <!-- Sustituir por:
-       <img src="/assets/img/losrevez-prensa.jpg"
-            alt="Los Revéz" width="612" height="408"> -->
-  <figure class="figure">
+  <figure class="figure figure--banda">
     <picture>
       <source srcset="/assets/banda-1224.avif" type="image/avif">
       <source srcset="/assets/banda-1224.webp" type="image/webp">
-    <img src="/assets/banda-1224.jpg"
-         alt="Los Revéz: Diego Sáenz, Gonzalo Pizarro y Diego Correa"
-         width="1224" height="756"
-         loading="lazy">
+      <img src="/assets/banda-1224.jpg"
+           alt="Los Revéz"
+           width="1224" height="756"
+           loading="lazy">
     </picture>
   </figure>
 
-  <!-- 
-  <figure class="figure">
-    <div class="placeholder">
-      <b>Foto de prensa</b>
-      <span>Los Revéz · horizontal · 1120 × 747 px · JPG</span>
-    </div>
-  </figure>
+  <div class="body-copy">
+    <p>
+      <strong>Sobre Los Revéz</strong><br>
+      Los Revéz son Diego Sáenz, Gonzalo Pizarro y Diego Correa: los fundadores de Pirañas y el cantante de Los Cocoa. Publican por su propio sello, Revéz Records, desde Bogotá.
+    </p>
+  </div>
 
-  <!-- ★ 8 -->
   <div class="cta-wrap">
     <a class="cta" href="https://distrokid.com/hyperfollow/losrevz/monstruo"
-       target="_blank" rel="noopener">Haz el pre-save de «Monstruo»</a>
+       target="_blank" rel="noopener">Pre-save en todas las plataformas</a>
     <p class="cta-url">distrokid.com/hyperfollow/losrevz/monstruo</p>
   </div>
 
-  <!-- ★ 9 -->
   <p class="advisory"><b>E</b> Contenido explícito</p>
 
   <p class="follow">Síguelos</p>
@@ -511,10 +380,9 @@
     </li>
   </ul>
 
-  <!-- ★ 10 -->
   <section class="contact">
     <h2>Contacto de prensa</h2>
-    <p><a href="mailto:losrevez@gmail.com">losrevez@gmail.com</a></p>
+    <p><a href="mailto:losrevez@gmail.com">losrevez@gmail.com</a> · <a href="https://losrevez.com/prensa/monstruo/">losrevez.com/prensa/monstruo</a></p>
   </section>
 
   <footer class="colophon">
@@ -528,19 +396,19 @@
 
 </article>
 
-<!-- ★ 11 -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "MusicRecording",
   "name": "Monstruo",
-  "byArtist": { "@type": "MusicGroup", "name": "Los Revéz" },
+  "byArtist": { "@type": "MusicGroup", "name": "Los Revéz", "url": "https://losrevez.com" },
   "inLanguage": "es",
   "datePublished": "2026-08-14",
   "duration": "PT2M24S",
   "isFamilyFriendly": false,
   "recordLabel": { "@type": "Organization", "name": "Revéz Records" },
-  "inAlbum": { "@type": "MusicAlbum", "name": "Al Derecho… y Los Revéz" }
+  "inAlbum": { "@type": "MusicAlbum", "name": "Al Derecho… y Los Revéz" },
+  "image": "https://losrevez.com/assets/monstruo-1320.jpg"
 }
 </script>
 
