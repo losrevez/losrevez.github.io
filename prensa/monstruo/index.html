@@ -115,9 +115,28 @@
   }
 
   .figure{ margin:0; padding:16px var(--pad); }
-  .figure--cover picture{ display:block; max-width:561px; margin-inline:auto; }
-  .figure--cover img{ width:100%; }
-  .figure--cover .placeholder{ max-width:561px; margin-inline:auto; }
+
+  .figure picture{
+    display:block;
+    background:#fafafa;
+    box-shadow:inset 0 0 0 2px #cfc7b0;
+  }
+  .figure img{
+    width:100%;
+    font-size:13px;
+    line-height:1.5;
+    color:var(--ink-soft);
+    text-align:center;
+  }
+
+  .figure--cover picture{
+    max-width:561px;
+    margin-inline:auto;
+    aspect-ratio:1/1;
+  }
+  .figure--banda picture{
+    aspect-ratio:1224/756;
+  }
 
 
   .lede{
