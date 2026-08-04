@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+@font-face{font-family:'Sporty Pro';src:url("fonts/SportyPro.otf");}
+@font-face{font-family:'Pilat Wide';src:url("fonts/PilatWide.otf");}
+@font-face{font-family:'Whitney Cond';src:url("fonts/WhitneyCond.otf");}
+@font-face{font-family:'Khand';src:url("fonts/Khand.ttf");font-weight:300 700;}
+@font-face{font-family:'Panchang';src:url("fonts/Panchang.ttf");font-weight:300 800;}
+@font-face{font-family:'Technor';src:url("fonts/Technor.ttf");font-weight:300 800;}
+body{margin:0;background:#1B1919;}
+a{color:#A89360;text-decoration:none;}
+a:hover{color:#D2CEC3;}
+::selection{background:#A89360;color:#1B1919;}
+</style>
+</helmet>
+
+<div style="background:#1B1919;color:#EDEAE2;font-family:'Whitney Cond',ui-sans-serif,sans-serif;min-height:100vh;padding-bottom:120px;">
+
+  <div style="max-width:1200px;margin:0 auto;padding:88px 48px 0;">
+    <div style="display:flex;gap:14px;align-items:center;font-family:'Khand',sans-serif;font-size:13px;letter-spacing:3.5px;text-transform:uppercase;color:#A89360;font-weight:600;">
+      <span style="display:block;width:36px;height:1px;background:#A89360;"></span>Sistema de marca · v1
+    </div>
+    <h1 style="font-family:'Sporty Pro',sans-serif;font-size:clamp(52px,9vw,124px);line-height:0.9;margin:22px 0 0;letter-spacing:0.5px;">LOS REVÉZ<br><span style="font-family:'Khand',sans-serif;font-weight:700;color:#A89360;">DESIGN SYSTEM</span></h1>
+    <p style="max-width:680px;font-size:17px;line-height:1.65;color:#A9A59B;margin:28px 0 0;text-wrap:pretty;">Extracted from <em style="color:#EDEAE2;font-style:normal;">RVZ 06</em> — the <em style="color:#EDEAE2;font-style:normal;">Desgastada</em> source file — plus the two single artworks, the band photography, and <em style="color:#EDEAE2;font-style:normal;">homepage_draft_v1.html</em>. Every value below is either read out of those files or explicitly marked as an inference.</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:26px;">
+      <span style="font-family:'Khand',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:6px 12px;background:#A89360;color:#1B1919;font-weight:600;">From source</span>
+      <span style="font-family:'Khand',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:6px 12px;border:1px solid #5C564A;color:#A9A59B;font-weight:600;">Sampled</span>
+      <span style="font-family:'Khand',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:6px 12px;border:1px solid #5C564A;color:#A9A59B;font-weight:600;">Matched</span>
+      <span style="font-family:'Khand',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:6px 12px;border:1px solid #5C564A;color:#A9A59B;font-weight:600;">Inferred</span>
+      <span style="font-family:'Khand',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:6px 12px;border:1px dashed #5C564A;color:#8A877E;font-weight:600;">Unresolved</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px 28px;margin-top:16px;max-width:900px;font-size:12.5px;line-height:1.5;color:#8A877E;">
+      <div><strong style="color:#A9A59B;">From source</strong> — read out of RVZ 06's drawing data.</div>
+      <div><strong style="color:#A9A59B;">Sampled</strong> — measured off released artwork pixels.</div>
+      <div><strong style="color:#A9A59B;">Matched</strong> — identified by comparing letterforms.</div>
+      <div><strong style="color:#A9A59B;">Inferred</strong> — my judgement, no usage evidence.</div>
+      <div><strong style="color:#A9A59B;">Unresolved</strong> — needs an answer from you.</div>
+    </div>
+  </div>
+
+  <div style="max-width:1200px;margin:0 auto;padding:36px 48px 0;">
+    <div style="border:1px solid #33312B;background:#141412;padding:22px 26px;display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;">
+      <span style="font-family:'Khand',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:6px 12px;background:#A89360;color:#1B1919;font-weight:600;white-space:nowrap;">From source</span>
+      <p style="margin:0;font-size:14.5px;line-height:1.65;color:#A9A59B;text-wrap:pretty;"><strong style="color:#EDEAE2;">Colors below are now read out of RVZ 06 itself</strong> — 14 pages, Affinity 3.2.3, art still live vector, so I pulled the fill values straight off the drawing operations rather than sampling pixels. Two limits of this export: it went out through PDFlib, which converts spot swatches to RGB, so I can read the exact RGB the file uses but not the Pantone ink builds behind them; and the type is outlined, so the fonts can't be read as font resources — the typography section still rests on glyph matching.</p>
+    </div>
+  </div>
+
+  <div style="max-width:1200px;margin:0 auto;padding:80px 48px 0;">
+    <div style="display:flex;align-items:baseline;gap:18px;border-bottom:1px solid #33312B;padding-bottom:16px;">
+      <span style="font-family:'Sporty Pro',sans-serif;font-size:15px;color:#A89360;">00</span>
+      <h2 style="font-family:'Pilat Wide',sans-serif;font-size:clamp(22px,2.6vw,32px);margin:0;font-weight:400;letter-spacing:0.5px;">The mark</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1.35fr 1fr;gap:40px;margin-top:36px;align-items:start;">
+      <div>
+        <div style="background:#D2CEC3;padding:0;overflow:hidden;">
+          <img src="/assets/logo.png" alt="Los Revéz Desgastada lockup" style="display:block;width:100%;">
+        </div>
+        <div style="font-family:'Khand',sans-serif;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#8A877E;margin-top:12px;">Desgastada lockup, as released — cut from Quiero Que Vengas cover art</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:22px;">
+        <div>
+          <div style="font-family:'Khand',sans-serif;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:#A89360;font-weight:600;margin-bottom:8px;">Construction</div>
+          <p style="margin:0;font-size:14.5px;line-height:1.65;color:#A9A59B;text-wrap:pretty;">Three fixed parts: <strong style="color:#EDEAE2;">LOS</strong> set small and tight, the <strong style="color:#EDEAE2;">crown</strong> in gold sitting on the apex of the V, and <strong style="color:#EDEAE2;">REVÉZ</strong> oversized underneath with the R reversed (Я) and the acute accent drawn as a solid slanted slab. ® sits at cap-height on the right. The crown's baseline arc and the V share a single vertical axis — the crown is not a free-floating element.</p>
+        </div>
+        <div>
+          <div style="font-family:'Khand',sans-serif;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:#A89360;font-weight:600;margin-bottom:8px;">Two observed states</div>
+          <p style="margin:0;font-size:14.5px;line-height:1.65;color:#A9A59B;text-wrap:pretty;"><strong style="color:#EDEAE2;">Desgastada</strong> — Ink Black #1B1919 with the worn speckle erosion, over the bone paper ground on both single covers. <strong style="color:#EDEAE2;">Solid knockout</strong> — Paper White #F3F4F2, no distress, over photography. The crown holds Brass Gold #A89360 in both; those three values are exactly what the source file uses.</p>
+        </div>
+        <div style="border-left:2px solid #5C564A;padding-left:16px;">
+          <p style="margin:0;font-size:13.5px;line-height:1.6;color:#8A877E;text-wrap:pretty;"><strong style="color:#A9A59B;">The distress is not in the source export.</strong> The four Desgastada pages of RVZ 06 draw 15–21 vector paths each and embed zero images — enough for a clean lockup, nowhere near enough for the speckle erosion, and no raster for it to hide in. So the worn treatment is either a live Affinity effect that this flattened export dropped, or it is applied downstream in the cover art. Either way there is no scalable master of the distressed mark in what I have: reproducing it large or small needs the layered original.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:1200px;margin:0 auto;padding:88px 48px 0;">
+    <div style="display:flex;align-items:baseline;gap:18px;border-bottom:1px solid #33312B;padding-bottom:16px;">
+      <span style="font-family:'Sporty Pro',sans-serif;font-size:15px;color:#A89360;">01</span>
+      <h2 style="font-family:'Pilat Wide',sans-serif;font-size:clamp(22px,2.6vw,32px);margin:0;font-weight:400;letter-spacing:0.5px;">Color</h2>
+    </div>
+    <p style="max-width:720px;font-size:15px;line-height:1.65;color:#A9A59B;margin:26px 0 34px;text-wrap:pretty;">Six colors are used across the 14 pages of RVZ 06, and only six. The three below carry the mark; the rest are page grounds. Counts are how many times each is set as a fill or stroke in the file.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;">
+
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:0;">
+        <div style="height:150px;background:#1B1919;box-shadow:inset 0 0 0 1px #33312B;"></div>
+        <div style="padding:22px 22px 26px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;">
+            <div style="font-size:17px;font-weight:600;">Ink Black</div>
+            <span style="font-family:'Khand',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px;background:#A89360;color:#1B1919;font-weight:600;">From source</span>
+          </div>
+          <div style="font-family:'Khand',sans-serif;font-size:14px;letter-spacing:1px;color:#A89360;margin-top:8px;">#1B1919 · rgb(27, 25, 25) · 15 uses</div>
+          <p style="margin:12px 0 0;font-size:13px;line-height:1.6;color:#8A877E;">The wordmark black, exact from the file — a warm off-black, not #000 and not the #0D0D0D the homepage draft assumed. Everything on this page sits on it.</p>
+        </div>
+      </div>
+
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:0;">
+        <div style="height:150px;background:#A89360;"></div>
+        <div style="padding:22px 22px 26px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;">
+            <div style="font-size:17px;font-weight:600;">Brass Gold</div>
+            <span style="font-family:'Khand',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px;background:#A89360;color:#1B1919;font-weight:600;">From source</span>
+          </div>
+          <div style="font-family:'Khand',sans-serif;font-size:14px;letter-spacing:1px;color:#A89360;margin-top:8px;">#A89360 · rgb(168, 147, 96) · 23 uses</div>
+          <p style="margin:12px 0 0;font-size:13px;line-height:1.6;color:#8A877E;">The most-used color in the file and the only chromatic one. <strong style="color:#A9A59B;">Flag:</strong> this is the RGB the export wrote, not the ink — PANTONE 871 C is a metallic, its published sRGB approximation is the much darker #84754E, and the covers print it darker still (#87764C sampled). Treat #A89360 as the screen value and always send the spot to print. Where it needs to survive as a real metallic, that's a foil or an ink, never a hex.</p>
+        </div>
+      </div>
+
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:0;">
+        <div style="height:150px;display:grid;grid-template-columns:1fr 1fr;">
+          <div style="background:#222020;"></div><div style="background:#14151A;"></div>
+        </div>
+        <div style="padding:22px 22px 26px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;">
+            <div style="font-size:17px;font-weight:600;">Deck darks</div>
+            <span style="font-family:'Khand',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px;background:#A89360;color:#1B1919;font-weight:600;">From source</span>
+          </div>
+          <div style="font-family:'Khand',sans-serif;font-size:14px;letter-spacing:1px;color:#A89360;margin-top:8px;">#222020 · 5 uses &nbsp;/&nbsp; #14151A · 2 uses</div>
+          <p style="margin:12px 0 0;font-size:13px;line-height:1.6;color:#8A877E;">Two secondary darks in the later pages — one a hair lighter than the ink, one cooler. They read as presentation grounds rather than brand colors, so I haven't promoted them. Confirm if either is meant to be a surface color in its own right.</p>
+        </div>
+      </div>
+
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:0;">
+        <div style="height:150px;background:#D2CEC3;"></div>
+        <div style="padding:22px 22px 26px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;">
+            <div style="font-size:17px;font-weight:600;">Bone</div>
+            <span style="font-family:'Khand',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px;border:1px solid #5C564A;color:#A9A59B;font-weight:600;">Sampled</span>
+          </div>
+          <div style="font-family:'Khand',sans-serif;font-size:14px;letter-spacing:1px;color:#A89360;margin-top:8px;">#D2CEC3 · rgb(210, 206, 195)</div>
+          <p style="margin:12px 0 0;font-size:13px;line-height:1.6;color:#8A877E;">Not in the logo file — this is the aged paper ground both single covers are built on, averaged across their untextured areas. It behaves as the brand's light surface in release art, but it is a cover-art decision rather than a value the mark specifies.</p>
+        </div>
+      </div>
+
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:0;">
+        <div style="height:150px;background:#F3F4F2;"></div>
+        <div style="padding:22px 22px 26px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;">
+            <div style="font-size:17px;font-weight:600;">Paper White</div>
+            <span style="font-family:'Khand',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px;background:#A89360;color:#1B1919;font-weight:600;">From source</span>
+          </div>
+          <div style="font-family:'Khand',sans-serif;font-size:14px;letter-spacing:1px;color:#A89360;margin-top:8px;">#F3F4F2 · rgb(243, 244, 242) · 20 uses</div>
+          <p style="margin:12px 0 0;font-size:13px;line-height:1.6;color:#8A877E;">The knockout white of the mark — a fraction green, effectively neutral, and deliberately not the pure #FFFFFF the file also uses (9 times) for page grounds. Use #F3F4F2 for the mark and for text on dark; keep pure white for backgrounds only.</p>
+        </div>
+      </div>
+
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:0;">
+        <div style="height:150px;background:#C0272D;"></div>
+        <div style="padding:22px 22px 26px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;">
+            <div style="font-size:17px;font-weight:600;">Red</div>
+            <span style="font-family:'Khand',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px;border:1px dashed #5C564A;color:#8A877E;font-weight:600;">Unresolved</span>
+          </div>
+          <div style="font-family:'Khand',sans-serif;font-size:14px;letter-spacing:1px;color:#A89360;margin-top:8px;">#C0272D · 2.98:1 ON INK · 3.74:1 ON BONE</div>
+          <p style="margin:12px 0 0;font-size:13px;line-height:1.6;color:#8A877E;">The draft's accent, carried forward under its own name. It appears nowhere in RVZ 06 or the release art, so #C0272D is a stand-in until an authoritative build arrives. Read the ratios as a hard limit: red is an accent — a rule, a tag, a fill behind white — and never body text on either ground.</p>
+        </div>
+      </div>
+
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:0;">
+        <div style="height:150px;background:#B8972A;"></div>
+        <div style="padding:22px 22px 26px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;">
+            <div style="font-size:17px;font-weight:600;">Draft drift</div>
+            <span style="font-family:'Khand',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px;border:1px dashed #5C564A;color:#8A877E;font-weight:600;">Unresolved</span>
+          </div>
+          <div style="font-family:'Khand',sans-serif;font-size:14px;letter-spacing:1px;color:#A89360;margin-top:8px;">#B8972A</div>
+          <p style="margin:12px 0 0;font-size:13px;line-height:1.6;color:#8A877E;">The draft's gold — a more saturated, yellower guess at the brand gold. It should move to #A89360. The red that sat beside it here has been reclassified as Red and now has its own entry.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;">
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:20px 22px;">
+        <div style="font-family:'Khand',sans-serif;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#A89360;margin-bottom:10px;">Default pairing</div>
+        <div style="font-size:13.5px;line-height:1.6;color:#8A877E;">Ink Black ground, Paper White type, one Brass Gold accent per view. Gold is a highlight — eyebrows, rules, the single button. It does not carry body copy.</div>
+      </div>
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:20px 22px;">
+        <div style="font-family:'Khand',sans-serif;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#A89360;margin-bottom:10px;">Inverted pairing</div>
+        <div style="font-size:13.5px;line-height:1.6;color:#8A877E;">Bone ground, Ink Black type, Brass Gold rules and secondary titles — the exact build of both single covers.</div>
+      </div>
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:20px 22px;">
+        <div style="font-family:'Khand',sans-serif;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#A89360;margin-bottom:10px;">Contrast check</div>
+        <div style="font-size:13.5px;line-height:1.6;color:#8A877E;">Computed on the source values: Paper White on Ink Black is 15.9:1, Brass Gold on Ink Black is 5.8:1 — that clears AA at any size, so gold text and gold buttons are safe on dark. The reverse is not: gold on Bone is 1.9:1, unreadable at any size, and gold on pure white is 3.00:1 — exactly the large-text and UI threshold, so display sizes scrape a pass while body text fails. On light grounds treat the gold as art; anything that has to be read goes Ink Black.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:1200px;margin:0 auto;padding:88px 48px 0;">
+    <div style="display:flex;align-items:baseline;gap:18px;border-bottom:1px solid #33312B;padding-bottom:16px;">
+      <span style="font-family:'Sporty Pro',sans-serif;font-size:15px;color:#A89360;">02</span>
+      <h2 style="font-family:'Pilat Wide',sans-serif;font-size:clamp(22px,2.6vw,32px);margin:0;font-weight:400;letter-spacing:0.5px;">Typography</h2>
+    </div>
+    <p style="max-width:720px;font-size:15px;line-height:1.65;color:#A9A59B;margin:26px 0 34px;text-wrap:pretty;">The type in RVZ 06 is outlined — no font resources survive in the file — so unlike the colors, none of this can be read directly. Roles were assigned by rendering all six kit files against the actual artwork and comparing letterform details. Two match; four have no usage anywhere in the source file or the release art, and are marked accordingly.</p>
+
+    <div style="display:flex;flex-direction:column;gap:1px;">
+
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:34px 30px;display:grid;grid-template-columns:minmax(280px,1fr) 1.2fr;gap:36px;align-items:center;">
+        <div>
+          <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px;">
+            <span style="font-family:'Khand',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px;border:1px solid #5C564A;color:#A9A59B;font-weight:600;">Matched</span>
+            <span style="font-family:'Khand',sans-serif;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#A89360;">Logotype</span>
+          </div>
+          <div style="font-size:22px;font-weight:600;">Sporty Pro Bold CD</div>
+          <p style="margin:12px 0 0;font-size:13.5px;line-height:1.6;color:#8A877E;text-wrap:pretty;">Confirmed against the lockup: the squared-off O with flat sides, the S with horizontal terminals, the equal-length E bars and the slab accent all match glyph for glyph, at both the small "LOS" size and the large wordmark. The reversed Я is a custom modification on top of it.</p>
+          <p style="margin:10px 0 0;font-size:13px;line-height:1.6;color:#8A877E;">Use for: the wordmark, and any headline whose content <em style="font-style:normal;color:#A9A59B;">is</em> the band name — there the type and the logo are the same object, so they take the same face. Nothing else — every other headline is Pilat Wide Heavy.</p>
+        </div>
+        <div style="font-family:'Sporty Pro',sans-serif;font-size:clamp(40px,6vw,78px);line-height:0.95;text-align:right;color:#EDEAE2;">LOS REVÉZ</div>
+      </div>
+
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:34px 30px;display:grid;grid-template-columns:minmax(280px,1fr) 1.2fr;gap:36px;align-items:center;">
+        <div>
+          <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px;">
+            <span style="font-family:'Khand',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px;border:1px solid #5C564A;color:#A9A59B;font-weight:600;">Matched</span>
+            <span style="font-family:'Khand',sans-serif;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#A89360;">Release titles</span>
+          </div>
+          <div style="font-size:22px;font-weight:600;">Pilat Wide Heavy</div>
+          <p style="margin:12px 0 0;font-size:13.5px;line-height:1.6;color:#8A877E;text-wrap:pretty;">Both cover titles carry its tells — the Q tail crossing the bowl low-right, the spurred G, the straight angled R leg. <strong style="color:#A9A59B;">Flag:</strong> neither is set at native width. MONSTRUO is squeezed slightly; QUIERO QUE VENGAS is squeezed hard to fill the banner. Horizontal scaling is being used as a layout tool, so treat width as art-directed per release rather than fixed.</p>
+          <p style="margin:10px 0 0;font-size:13px;line-height:1.6;color:#8A877E;">Use for: song and release titles, the date line under a hero, and every page headline that isn't the band name.</p>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-family:'Pilat Wide',sans-serif;font-size:clamp(28px,4.4vw,56px);line-height:1;color:#EDEAE2;">MONSTRUO</div>
+          <div style="font-family:'Pilat Wide',sans-serif;font-size:clamp(20px,3vw,38px);line-height:1.1;color:#A89360;transform:scaleX(0.68);transform-origin:right center;white-space:nowrap;">QUIERO QUE VENGAS</div>
+          <div style="font-family:'Khand',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8A877E;margin-top:10px;">native width · scaled to 68%</div>
+        </div>
+      </div>
+
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:34px 30px;display:grid;grid-template-columns:minmax(280px,1fr) 1.2fr;gap:36px;align-items:center;">
+        <div>
+          <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px;">
+            <span style="font-family:'Khand',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px;border:1px solid #5C564A;color:#A9A59B;font-weight:600;">Inferred</span>
+            <span style="font-family:'Khand',sans-serif;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#A89360;">Body &amp; UI</span>
+          </div>
+          <div style="font-size:22px;font-weight:600;">Whitney Condensed Medium</div>
+          <p style="margin:12px 0 0;font-size:13.5px;line-height:1.6;color:#8A877E;text-wrap:pretty;"><strong style="color:#A9A59B;">Not observed anywhere.</strong> There is no running text in any supplied asset, so this is a judgement call: of the six, it is the only one drawn for continuous reading — true lowercase rhythm, open counters, a real text x-height — while staying condensed enough to sit under the display faces. Everything on this page is set in it.</p>
+          <p style="margin:10px 0 0;font-size:13px;line-height:1.6;color:#8A877E;">Only one weight was supplied. Body copy needs a bold for emphasis and links — request the family's Bold before this ships.</p>
+        </div>
+        <div style="text-align:right;font-family:'Whitney Cond',sans-serif;">
+          <div style="font-size:26px;line-height:1.35;color:#EDEAE2;">Rock guitarrero, hecho en Bogotá.</div>
+          <div style="font-size:15px;line-height:1.6;color:#A9A59B;margin-top:10px;">Segundo adelanto del EP «Al Derecho… y Los Revéz».</div>
+        </div>
+      </div>
+
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:34px 30px;display:grid;grid-template-columns:minmax(280px,1fr) 1.2fr;gap:36px;align-items:center;">
+        <div>
+          <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px;">
+            <span style="font-family:'Khand',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px;border:1px solid #5C564A;color:#A9A59B;font-weight:600;">Inferred</span>
+            <span style="font-family:'Khand',sans-serif;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#A89360;">Labels &amp; meta</span>
+          </div>
+          <div style="font-size:22px;font-weight:600;">Khand</div>
+          <p style="margin:12px 0 0;font-size:13.5px;line-height:1.6;color:#8A877E;text-wrap:pretty;"><strong style="color:#A9A59B;">Not observed anywhere.</strong> Assigned on fit: it is variable-weight and narrow, so tracked-out caps hold their color at 10–13px where the display faces get muddy. Eyebrows, tags, captions and meta lines sit in it. One display exception — the words <em style="font-style:normal;color:#A9A59B;">DESIGN SYSTEM</em> in this page's own title, set at 700 beside the Sporty Pro wordmark.</p>
+        </div>
+        <div style="text-align:right;font-family:'Khand',sans-serif;">
+          <div style="font-size:24px;letter-spacing:4px;text-transform:uppercase;font-weight:600;color:#EDEAE2;">Nuevo sencillo</div>
+          <div style="font-size:13px;letter-spacing:3px;text-transform:uppercase;color:#A89360;margin-top:8px;">14 de agosto · Revéz Records</div>
+        </div>
+      </div>
+
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:34px 30px;display:grid;grid-template-columns:minmax(280px,1fr) 1.2fr;gap:36px;align-items:center;">
+        <div>
+          <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px;">
+            <span style="font-family:'Khand',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px;border:1px dashed #5C564A;color:#8A877E;font-weight:600;">Unresolved</span>
+            <span style="font-family:'Khand',sans-serif;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#8A877E;">No role</span>
+          </div>
+          <div style="font-size:22px;font-weight:600;color:#A9A59B;">Panchang · Technor</div>
+          <p style="margin:12px 0 0;font-size:13.5px;line-height:1.6;color:#8A877E;text-wrap:pretty;">Both are in the kit; neither matches any letterform in the lockup, either cover, or the band photography. Panchang's rounded geometric caps and Technor's chamfered techno forms are stylistically at odds with the athletic-block logotype. The source file can't settle it either — its type is outlined — so I'm leaving them unassigned rather than guessing. If they are live somewhere, tell me where and I'll slot them in.</p>
+        </div>
+        <div style="text-align:right;opacity:0.55;">
+          <div style="font-family:'Panchang',sans-serif;font-size:clamp(24px,3.4vw,42px);color:#A9A59B;">Panchang</div>
+          <div style="font-family:'Technor',sans-serif;font-size:clamp(24px,3.4vw,42px);color:#A9A59B;margin-top:6px;">Technor</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:40px;border:1px solid #33312B;">
+      <div style="font-family:'Khand',sans-serif;font-size:11.5px;letter-spacing:2.5px;text-transform:uppercase;color:#A89360;padding:16px 24px;border-bottom:1px solid #33312B;">Type scale — as used in the hero pattern</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1px;">
+        <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:20px 24px;">
+          <div style="font-family:'Pilat Wide',sans-serif;font-size:34px;line-height:1;color:#EDEAE2;">Aa</div>
+          <div style="font-size:13.5px;color:#A9A59B;margin-top:12px;">Display title — every h1 except the band name</div>
+          <div style="font-family:'Khand',sans-serif;font-size:12px;letter-spacing:1.5px;color:#8A877E;margin-top:4px;">Pilat Wide · 56–132px · LH 0.88</div>
+        </div>
+        <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:20px 24px;">
+          <div style="font-family:'Pilat Wide',sans-serif;font-size:26px;line-height:1;color:#A89360;">Aa</div>
+          <div style="font-size:13.5px;color:#A9A59B;margin-top:12px;">Date / release line</div>
+          <div style="font-family:'Khand',sans-serif;font-size:12px;letter-spacing:1.5px;color:#8A877E;margin-top:4px;">Pilat Wide · 18–26px · +2px track</div>
+        </div>
+        <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:20px 24px;">
+          <div style="font-family:'Khand',sans-serif;font-size:22px;letter-spacing:3px;text-transform:uppercase;color:#A89360;font-weight:600;">Aa</div>
+          <div style="font-size:13.5px;color:#A9A59B;margin-top:12px;">Eyebrow</div>
+          <div style="font-family:'Khand',sans-serif;font-size:12px;letter-spacing:1.5px;color:#8A877E;margin-top:4px;">Khand · 12px · +2px track · caps</div>
+        </div>
+        <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:20px 24px;">
+          <div style="font-family:'Whitney Cond',sans-serif;font-size:24px;color:#EDEAE2;">Aa</div>
+          <div style="font-size:13.5px;color:#A9A59B;margin-top:12px;">Body / CTA</div>
+          <div style="font-family:'Khand',sans-serif;font-size:12px;letter-spacing:1.5px;color:#8A877E;margin-top:4px;">Whitney Cond · 16px · LH 1.6</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:40px;border:1px solid #33312B;">
+      <div style="font-family:'Khand',sans-serif;font-size:11.5px;letter-spacing:2.5px;text-transform:uppercase;color:#A89360;padding:16px 24px;border-bottom:1px solid #33312B;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+        <span>Running text — a press release, set</span>
+        <span style="color:#8A877E;">Specimen copy · not for publication</span>
+      </div>
+      <div style="display:grid;grid-template-columns:minmax(320px,1.55fr) minmax(230px,0.85fr);">
+
+        <div style="background:#D2CEC3;color:#1B1919;padding:52px 56px 56px;">
+          <div style="display:inline-flex;align-items:center;gap:10px;font-family:'Khand',sans-serif;font-size:12px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#1B1919;">
+            <span style="width:28px;height:2px;background:#A89360;display:inline-block;"></span>Comunicado de prensa
+          </div>
+          <h3 style="font-family:'Pilat Wide',sans-serif;font-size:clamp(26px,3.4vw,40px);line-height:1.02;letter-spacing:0.5px;margin:20px 0 0;color:#1B1919;max-width:11ch;">MONSTRUO</h3>
+          <p style="font-family:'Pilat Wide',sans-serif;font-size:15px;letter-spacing:2px;color:rgba(27,25,25,0.72);margin:14px 0 0;">14 DE AGOSTO · REVÉZ RECORDS</p>
+          <div style="width:64px;height:1px;background:rgba(27,25,25,0.3);margin:28px 0;"></div>
+          <p style="font-size:19px;line-height:1.5;color:#1B1919;margin:0;max-width:34em;text-wrap:pretty;">Los Revéz publican el segundo adelanto de «Al Derecho… y Los Revéz», grabado en dos sesiones y sin edición por partes.</p>
+          <p style="font-size:16px;line-height:1.68;color:rgba(27,25,25,0.78);margin:22px 0 0;max-width:34em;text-wrap:pretty;"><span style="font-family:'Khand',sans-serif;font-weight:600;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:#1B1919;">Bogotá, 14 de agosto —</span> La canción llega hoy a plataformas digitales. Escrita durante los ensayos del año pasado, mantiene el trabajo de guitarras que la banda viene sosteniendo desde su primer sencillo, esta vez sobre una sección rítmica más seca y una letra dirigida a quien alguna vez puso en duda la música como oficio.</p>
+          <p style="font-size:16px;line-height:1.68;color:rgba(27,25,25,0.78);margin:16px 0 0;max-width:34em;text-wrap:pretty;">La grabación buscó el empuje que el grupo tiene en vivo antes que la limpieza del estudio: tomas completas, la banda tocando junta en la sala, y una mezcla que deja el bajo al frente. El EP completo se publica en noviembre.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:30px;">
+            <a href="https://distrokid.com/hyperfollow/losrevz/monstruo" target="_blank" rel="noopener" style="background:#1B1919;color:#F3F4F2;font-family:'Whitney Cond',sans-serif;font-weight:600;font-size:15px;letter-spacing:0.5px;padding:14px 28px;border-radius:2px;display:inline-block;" style-hover="background:#332F2F;">Escuchar</a>
+            <span style="font-family:'Khand',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:rgba(27,25,25,0.66);">Prensa · nombre, correo, teléfono</span>
+          </div>
+        </div>
+
+        <div style="background:#141412;padding:40px 30px;display:flex;flex-direction:column;gap:22px;">
+          <div>
+            <div style="font-family:'Khand',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#A89360;font-weight:600;margin-bottom:8px;">Why on Bone</div>
+            <p style="margin:0;font-size:13px;line-height:1.6;color:#8A877E;">A release is the text-dense case light mode exists for. Ink on Bone runs 11.1:1; the same paragraph reversed out of black is harder to hold across four lines.</p>
+          </div>
+          <div>
+            <div style="font-family:'Khand',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#A89360;font-weight:600;margin-bottom:8px;">Measure</div>
+            <p style="margin:0;font-size:13px;line-height:1.6;color:#8A877E;">Capped at 34em, about 66 characters. Whitney Condensed fits more per line than a normal-width face, so the em cap is tighter than it looks.</p>
+          </div>
+          <div>
+            <div style="font-family:'Khand',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#A89360;font-weight:600;margin-bottom:8px;">The three sizes</div>
+            <p style="margin:0;font-size:13px;line-height:1.6;color:#8A877E;">Lead 19px/1.5 at full ink. Body 16px/1.68 at Ink 78%. Meta 12px Khand caps. No indents, no justification — space between paragraphs does the separating.</p>
+          </div>
+          <div>
+            <div style="font-family:'Khand',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#A89360;font-weight:600;margin-bottom:8px;">Dateline</div>
+            <p style="margin:0;font-size:13px;line-height:1.6;color:#8A877E;">Khand caps run into the first sentence rather than sitting on its own line — it marks the start of the body without costing a paragraph.</p>
+          </div>
+          <div style="border-left:2px solid #5C564A;padding-left:14px;">
+            <p style="margin:0;font-size:12.5px;line-height:1.6;color:#8A877E;">Emphasis inside body copy is the open problem: only one Whitney weight was supplied, so a bold run in a paragraph has nothing to become. Request the family's Bold.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:1200px;margin:0 auto;padding:88px 48px 0;">
+    <div style="display:flex;align-items:baseline;gap:18px;border-bottom:1px solid #33312B;padding-bottom:16px;">
+      <span style="font-family:'Sporty Pro',sans-serif;font-size:15px;color:#A89360;">03</span>
+      <h2 style="font-family:'Pilat Wide',sans-serif;font-size:clamp(22px,2.6vw,32px);margin:0;font-weight:400;letter-spacing:0.5px;">Hero pattern</h2>
+    </div>
+    <p style="max-width:720px;font-size:15px;line-height:1.65;color:#A9A59B;margin:26px 0 0;text-wrap:pretty;">The structure from <em style="color:#EDEAE2;font-style:normal;">homepage_draft_v1.html</em>, rebuilt on the extracted palette and the real type kit: full-bleed photograph, bottom-weighted blackout, oversized display title, exactly one primary action. Live below — swap the photograph and the link target in Tweaks.</p>
+  </div>
+
+  <div style="position:relative;min-height:86vh;display:flex;flex-direction:column;overflow:hidden;margin-top:40px;background:#1B1919;">
+    <div style="position:relative;flex:1 1 auto;min-height:48vh;overflow:hidden;">
+      <img src="/assets/LosRevez_02_Monstruo_BandPhoto_ALTA_5801x3585_sRGB.jpg" alt="Los Revéz" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:saturate(0.85) contrast(1.06);">
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(27,25,25,0.05) 0%,rgba(27,25,25,0.30) 52%,rgba(27,25,25,0.88) 88%,#1B1919 100%);"></div>
+    </div>
+    <div style="position:relative;box-sizing:border-box;flex:0 0 auto;background:#1B1919;padding:34px 48px 72px;">
+     <div style="max-width:820px;">
+      <div style="display:inline-flex;align-items:center;gap:10px;font-family:'Khand',sans-serif;font-size:12px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#A89360;margin-bottom:18px;">
+        <span style="width:28px;height:1px;background:#A89360;display:inline-block;"></span>Nuevo sencillo
+      </div>
+      <h1 style="font-family:'Pilat Wide',sans-serif;font-size:clamp(56px,13vw,132px);line-height:0.88;letter-spacing:0.5px;margin:0;color:#F3F4F2;">MONSTRUO</h1>
+      <div style="font-family:'Pilat Wide',sans-serif;font-size:clamp(18px,3.2vw,26px);letter-spacing:2px;color:#A89360;margin-top:16px;">14 DE AGOSTO</div>
+      <p style="margin:22px 0 0;font-size:16px;line-height:1.6;color:#D2CEC3;max-width:500px;text-wrap:pretty;">Una carta al que se burló de la música como carrera. Segundo adelanto del EP «Al Derecho… y Los Revéz».</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px;align-items:center;">
+        <a href="https://distrokid.com/hyperfollow/losrevz/monstruo" target="_blank" rel="noopener" style="background:#A89360;color:#1B1919;font-family:'Whitney Cond',sans-serif;font-weight:600;font-size:16px;letter-spacing:0.5px;padding:16px 34px;border-radius:2px;display:inline-block;" style-hover="background:#C4B384;">Pre-save</a>
+        <span style="font-family:'Khand',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#A9A59B;">Spotify · Apple Music · Deezer</span>
+      </div>
+     </div>
+    </div>
+  </div>
+
+  <div style="max-width:1200px;margin:0 auto;padding:44px 48px 0;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;">
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:22px 24px;">
+        <div style="font-family:'Khand',sans-serif;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#A89360;margin-bottom:10px;">Image</div>
+        <div style="font-size:13.5px;line-height:1.6;color:#8A877E;">Full-bleed, in its own box: the photo area is a flex child at min-height 48vh, so it can never be squeezed out by a long copy block, and object-fit cover frames on that box rather than on the whole hero. Focal point 30% from top, desaturated to 0.85 with a touch of contrast — the photography is already near-monochrome and the treatment keeps it there.</div>
+      </div>
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:22px 24px;">
+        <div style="font-family:'Khand',sans-serif;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#A89360;margin-bottom:10px;">Ink plate</div>
+        <div style="font-size:13.5px;line-height:1.6;color:#8A877E;">No copy sits on the photograph. The image fades to solid Ink Black across its last 12%, handing off to an opaque plate that carries the whole text block, so contrast is set by the palette and not by the picture: title 15.9:1, eyebrow and CTA 5.8:1, body 11.1:1 — identical over the white-wall studio shot and the near-black cover art. A translucent scrim can't promise that; whichever photograph goes in, these hold.</div>
+      </div>
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:22px 24px;">
+        <div style="font-family:'Khand',sans-serif;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#A89360;margin-bottom:10px;">Title</div>
+        <div style="font-size:13.5px;line-height:1.6;color:#8A877E;">Sporty Pro at clamp(56px, 13vw, 132px), line-height 0.88, bottom-left, capped at 820px so it never runs the full width of a desktop viewport.</div>
+      </div>
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:22px 24px;">
+        <div style="font-family:'Khand',sans-serif;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#A89360;margin-bottom:10px;">One action</div>
+        <div style="font-size:13.5px;line-height:1.6;color:#8A877E;">A single gold button. Platform names sit beside it as text, not as competing buttons — the draft's pill row was pulling weight away from the CTA.</div>
+      </div>
+    </div>
+    <p style="max-width:720px;font-size:13.5px;line-height:1.65;color:#8A877E;margin:26px 0 0;text-wrap:pretty;">Deviations from the draft, deliberate: the accent gold moved from #B8972A to #A89360 as read from the source file, the red date line moved to gold (no red exists in the brand assets), and Anton/Inter were replaced by the real kit. The platform pills became plain text to leave one primary action.</p>
+  </div>
+
+  <div style="background:#D2CEC3;color:#1B1919;margin-top:96px;padding:80px 0 0;">
+    <div style="max-width:1200px;margin:0 auto;padding:0 48px;">
+      <div style="display:flex;align-items:baseline;gap:18px;border-bottom:1px solid rgba(27,25,25,0.24);padding-bottom:16px;">
+        <span style="font-family:'Sporty Pro',sans-serif;font-size:15px;color:#1B1919;">04</span>
+        <h2 style="font-family:'Pilat Wide',sans-serif;font-size:clamp(22px,2.6vw,32px);margin:0;font-weight:400;letter-spacing:0.5px;color:#1B1919;">Light mode</h2>
+      </div>
+      <p style="max-width:730px;font-size:15px;line-height:1.65;color:rgba(27,25,25,0.74);margin:26px 0 0;text-wrap:pretty;">The inverted pairing, built out: <strong style="color:#1B1919;">Bone</strong> ground, <strong style="color:#1B1919;">Ink Black</strong> for all type and for the lockup, Brass Gold demoted to rules, hairlines and ornament. Nothing that has to be read is gold. This section is set in the mode it documents, so every ratio below is live on this page.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;margin-top:34px;">
+        <div style="box-shadow:0 0 0 1px rgba(27,25,25,0.22);padding:22px 24px;">
+          <div style="font-size:24px;font-weight:600;color:#1B1919;">Ink Black</div>
+          <div style="font-family:'Khand',sans-serif;font-size:13px;letter-spacing:1.5px;color:rgba(27,25,25,0.6);margin-top:6px;">#1B1919 ON #D2CEC3 · 11.1:1</div>
+          <div style="font-size:13.5px;line-height:1.6;color:rgba(27,25,25,0.68);margin-top:12px;">Headlines, body, the lockup, every control label. Passes AAA at any size.</div>
+        </div>
+        <div style="box-shadow:0 0 0 1px rgba(27,25,25,0.22);padding:22px 24px;">
+          <div style="font-size:24px;font-weight:600;color:rgba(27,25,25,0.72);">Ink 72%</div>
+          <div style="font-family:'Khand',sans-serif;font-size:13px;letter-spacing:1.5px;color:rgba(27,25,25,0.6);margin-top:6px;">≈#4E4D49 ON #D2CEC3 · 5.4:1</div>
+          <div style="font-size:13.5px;line-height:1.6;color:rgba(27,25,25,0.68);margin-top:12px;">The one secondary tone — supporting copy and captions. A tint of the brand ink, not a new grey. Clears AA body.</div>
+        </div>
+        <div style="box-shadow:0 0 0 1px rgba(27,25,25,0.22);padding:22px 24px;">
+          <div style="font-size:24px;font-weight:600;color:#A89360;">Brass Gold</div>
+          <div style="font-family:'Khand',sans-serif;font-size:13px;letter-spacing:1.5px;color:rgba(27,25,25,0.6);margin-top:6px;">#A89360 ON #D2CEC3 · 1.9:1</div>
+          <div style="font-size:13.5px;line-height:1.6;color:rgba(27,25,25,0.68);margin-top:12px;">Ornament only — rules, hairlines, the crown. Darkening it doesn't rescue it: the print gold #87764C still only reaches 2.8:1, under even the 3:1 large-text floor. There is no readable gold on Bone.</div>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:baseline;gap:14px;margin-top:64px;">
+        <span style="display:block;width:36px;height:2px;background:#A89360;"></span>
+        <div style="font-family:'Khand',sans-serif;font-size:13px;letter-spacing:3.5px;text-transform:uppercase;color:#1B1919;font-weight:600;">The CTA, re-treated</div>
+      </div>
+      <p style="max-width:730px;font-size:15px;line-height:1.65;color:rgba(27,25,25,0.74);margin:16px 0 0;text-wrap:pretty;">The gold button is the one component that can't survive the flip — and not for the reason it looks like. Its <em style="font-style:normal;color:#1B1919;">label</em> is fine: ink on gold is 5.8:1 either way. What fails is the button's own edge against the page, 1.9:1, well under the 3:1 that WCAG 1.4.11 requires of a control's boundary. The affordance disappears; it reads as a patch of texture, not something you can press. Three replacements, measured:</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:1px;margin-top:28px;">
+
+        <div style="box-shadow:0 0 0 1px rgba(27,25,25,0.22);border-top:2px solid rgba(27,25,25,0.28);padding:24px 24px 28px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;">
+            <div style="font-size:16px;font-weight:600;">Solid gold</div>
+            <span style="font-family:'Khand',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px;border:1px dashed rgba(27,25,25,0.45);color:rgba(27,25,25,0.6);font-weight:600;">Rejected</span>
+          </div>
+          <div style="margin-top:20px;"><span style="background:#A89360;color:#1B1919;font-family:'Whitney Cond',sans-serif;font-weight:600;font-size:16px;letter-spacing:0.5px;padding:16px 34px;border-radius:2px;display:inline-block;">Pre-save</span></div>
+          <div style="font-family:'Khand',sans-serif;font-size:12.5px;letter-spacing:1.2px;color:rgba(27,25,25,0.6);margin-top:18px;line-height:1.7;">EDGE VS GROUND · 1.9:1 ✗<br>LABEL · 5.8:1 ✓</div>
+          <p style="margin:12px 0 0;font-size:13px;line-height:1.6;color:rgba(27,25,25,0.68);">Carried straight over from dark mode. The shape dissolves into the paper.</p>
+        </div>
+
+        <div style="box-shadow:0 0 0 1px rgba(27,25,25,0.22);border-top:2px solid #A89360;padding:24px 24px 28px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;">
+            <div style="font-size:16px;font-weight:600;">Dark fill</div>
+            <span style="font-family:'Khand',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px;background:#1B1919;color:#F3F4F2;font-weight:600;">Recommended</span>
+          </div>
+          <div style="margin-top:20px;"><span style="background:#1B1919;color:#F3F4F2;font-family:'Whitney Cond',sans-serif;font-weight:600;font-size:16px;letter-spacing:0.5px;padding:16px 34px;border-radius:2px;display:inline-block;">Pre-save</span></div>
+          <div style="font-family:'Khand',sans-serif;font-size:12.5px;letter-spacing:1.2px;color:rgba(27,25,25,0.6);margin-top:18px;line-height:1.7;">EDGE VS GROUND · 11.1:1 ✓<br>LABEL · 15.9:1 ✓</div>
+          <p style="margin:12px 0 0;font-size:13px;line-height:1.6;color:rgba(27,25,25,0.68);">Ink fill, Paper White label — the dark hero's plate compressed into one control. Highest contrast of the three and the only one that needs no caveat.</p>
+        </div>
+
+        <div style="box-shadow:0 0 0 1px rgba(27,25,25,0.22);border-top:2px solid #A89360;padding:24px 24px 28px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;">
+            <div style="font-size:16px;font-weight:600;">Dark fill, gold label</div>
+            <span style="font-family:'Khand',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px;border:1px solid rgba(27,25,25,0.45);color:#1B1919;font-weight:600;">Alternate</span>
+          </div>
+          <div style="margin-top:20px;"><span style="background:#1B1919;color:#A89360;font-family:'Whitney Cond',sans-serif;font-weight:600;font-size:16px;letter-spacing:0.5px;padding:16px 34px;border-radius:2px;display:inline-block;">Pre-save</span></div>
+          <div style="font-family:'Khand',sans-serif;font-size:12.5px;letter-spacing:1.2px;color:rgba(27,25,25,0.6);margin-top:18px;line-height:1.7;">EDGE VS GROUND · 11.1:1 ✓<br>LABEL · 5.8:1 ✓</div>
+          <p style="margin:12px 0 0;font-size:13px;line-height:1.6;color:rgba(27,25,25,0.68);">Keeps gold in the control by moving it onto ink, where it's legal. Use where the button is the only gold on the view.</p>
+        </div>
+
+        <div style="box-shadow:0 0 0 1px rgba(27,25,25,0.22);border-top:2px solid #A89360;padding:24px 24px 28px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;">
+            <div style="font-size:16px;font-weight:600;">Outline, ghost</div>
+            <span style="font-family:'Khand',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px;border:1px solid rgba(27,25,25,0.45);color:#1B1919;font-weight:600;">Secondary</span>
+          </div>
+          <div style="margin-top:20px;"><span style="border:1.5px solid #1B1919;color:#1B1919;font-family:'Whitney Cond',sans-serif;font-weight:600;font-size:16px;letter-spacing:0.5px;padding:14.5px 32.5px;border-radius:2px;display:inline-block;">Escuchar</span></div>
+          <div style="font-family:'Khand',sans-serif;font-size:12.5px;letter-spacing:1.2px;color:rgba(27,25,25,0.6);margin-top:18px;line-height:1.7;">BORDER VS GROUND · 11.1:1 ✓<br>LABEL · 11.1:1 ✓</div>
+          <p style="margin:12px 0 0;font-size:13px;line-height:1.6;color:rgba(27,25,25,0.68);">The border must be ink. A <em style="font-style:normal;color:#1B1919;">gold</em> outline fails the same 1.9:1 as the gold fill, and worse — there the stroke <em style="font-style:normal;color:#1B1919;">is</em> the whole affordance.</p>
+        </div>
+
+      </div>
+
+      <p style="max-width:730px;font-size:13.5px;line-height:1.65;color:rgba(27,25,25,0.62);margin:26px 0 0;text-wrap:pretty;">One rule falls out of all four: on light grounds gold may sit <em style="font-style:normal;color:#1B1919;">under</em> ink but never <em style="font-style:normal;color:#1B1919;">behind</em> a reader's eye — it is a rule, a hairline, a crown. Every boundary and every glyph goes ink.</p>
+    </div>
+
+    <div style="position:relative;min-height:80vh;display:flex;flex-direction:column;overflow:hidden;margin-top:56px;background:#D2CEC3;">
+      <div style="position:relative;flex:1 1 auto;min-height:44vh;overflow:hidden;">
+        <img src="/assets/LosRevez_02_Monstruo_BandPhoto_ALTA_5801x3585_sRGB.jpg" alt="Los Revéz" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:saturate(0.7) contrast(1.02) brightness(1.04);">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(210,206,195,0) 0%,rgba(210,206,195,0.18) 50%,rgba(210,206,195,0.86) 87%,#D2CEC3 100%);"></div>
+      </div>
+      <div style="position:relative;box-sizing:border-box;flex:0 0 auto;background:#D2CEC3;padding:34px 48px 72px;">
+       <div style="max-width:820px;">
+        <div style="display:inline-flex;align-items:center;gap:10px;font-family:'Khand',sans-serif;font-size:12px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#1B1919;margin-bottom:18px;">
+          <span style="width:28px;height:2px;background:#A89360;display:inline-block;"></span>Nuevo sencillo
+        </div>
+        <h1 style="font-family:'Pilat Wide',sans-serif;font-size:clamp(56px,13vw,132px);line-height:0.88;letter-spacing:0.5px;margin:0;color:#1B1919;">MONSTRUO</h1>
+        <div style="font-family:'Pilat Wide',sans-serif;font-size:clamp(18px,3.2vw,26px);letter-spacing:2px;color:rgba(27,25,25,0.72);margin-top:16px;">14 DE AGOSTO</div>
+        <p style="margin:22px 0 0;font-size:16px;line-height:1.6;color:rgba(27,25,25,0.74);max-width:500px;text-wrap:pretty;">Una carta al que se burló de la música como carrera. Segundo adelanto del EP «Al Derecho… y Los Revéz».</p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px;align-items:center;">
+          <a href="https://distrokid.com/hyperfollow/losrevz/monstruo" target="_blank" rel="noopener" style="background:#1B1919;color:#F3F4F2;font-family:'Whitney Cond',sans-serif;font-weight:600;font-size:16px;letter-spacing:0.5px;padding:16px 34px;border-radius:2px;display:inline-block;" style-hover="background:#332F2F;">Pre-save</a>
+          <span style="font-family:'Khand',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:rgba(27,25,25,0.66);">Spotify · Apple Music · Deezer</span>
+        </div>
+       </div>
+      </div>
+    </div>
+
+    <div style="max-width:1200px;margin:0 auto;padding:44px 48px 88px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;">
+        <div style="box-shadow:0 0 0 1px rgba(27,25,25,0.22);padding:22px 24px;">
+          <div style="font-family:'Khand',sans-serif;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#1B1919;font-weight:600;margin-bottom:10px;">What flipped</div>
+          <div style="font-size:13.5px;line-height:1.6;color:rgba(27,25,25,0.68);">Plate to Bone, all type to ink, and the two gold text items — the eyebrow and the date line — reassigned. The eyebrow keeps its gold as the <em style="font-style:normal;color:#1B1919;">rule</em> beside it, thickened to 2px so the accent still registers; its words went ink. The date line went Ink 72%.</div>
+        </div>
+        <div style="box-shadow:0 0 0 1px rgba(27,25,25,0.22);padding:22px 24px;">
+          <div style="font-family:'Khand',sans-serif;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#1B1919;font-weight:600;margin-bottom:10px;">Photo handoff</div>
+          <div style="font-size:13.5px;line-height:1.6;color:rgba(27,25,25,0.68);">Same structure as dark: the image owns its own box and fades to solid Bone across its last 13%, so no copy ever sits on the photograph. Brightness nudged to 1.04 and saturation dropped to 0.7 so the near-monochrome photography meets the paper rather than punching a hole in it.</div>
+        </div>
+        <div style="box-shadow:0 0 0 1px rgba(27,25,25,0.22);padding:22px 24px;">
+          <div style="font-family:'Khand',sans-serif;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#1B1919;font-weight:600;margin-bottom:10px;">Which mode when</div>
+          <div style="font-size:13.5px;line-height:1.6;color:rgba(27,25,25,0.68);">Dark for anything photographic or in-release — it's the band's default. Light is the covers' own build, so it belongs on print, merch, lyric and credit pages: text-dense surfaces where 11.1:1 ink on paper beats a photograph.</div>
+        </div>
+        <div style="box-shadow:0 0 0 1px rgba(27,25,25,0.22);padding:22px 24px;">
+          <div style="font-family:'Khand',sans-serif;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#1B1919;font-weight:600;margin-bottom:10px;">Still unresolved here</div>
+          <div style="font-size:13.5px;line-height:1.6;color:rgba(27,25,25,0.68);">Bone itself is sampled from cover art, not read from RVZ 06 — light mode's whole ground rests on an inference. If the band has a specified paper value, it replaces #D2CEC3 and every ratio on this page shifts with it.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:1200px;margin:0 auto;padding:88px 48px 0;">
+    <div style="display:flex;align-items:baseline;gap:18px;border-bottom:1px solid #33312B;padding-bottom:16px;">
+      <span style="font-family:'Sporty Pro',sans-serif;font-size:15px;color:#A89360;">05</span>
+      <h2 style="font-family:'Pilat Wide',sans-serif;font-size:clamp(22px,2.6vw,32px);margin:0;font-weight:400;letter-spacing:0.5px;">Open questions</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;margin-top:32px;">
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:24px 26px;">
+        <div style="font-size:16px;font-weight:600;margin-bottom:8px;">Red — the authoritative build</div>
+        <div style="font-size:13.5px;line-height:1.6;color:#8A877E;">#C0272D comes from the draft and appears in neither RVZ 06 nor the release art. Send the CMYK or Lab build and say where red is meant to be used.</div>
+      </div>
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:24px 26px;">
+        <div style="font-size:16px;font-weight:600;margin-bottom:8px;">Panchang &amp; Technor</div>
+        <div style="font-size:13.5px;line-height:1.6;color:#8A877E;">Where are they used? No trace of either in the lockup, covers, or photos.</div>
+      </div>
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:24px 26px;">
+        <div style="font-size:16px;font-weight:600;margin-bottom:8px;">Whitney Condensed Bold</div>
+        <div style="font-size:13.5px;line-height:1.6;color:#8A877E;">Only Medium was supplied. Body text needs a bold companion weight.</div>
+      </div>
+      <div style="background:#1B1919;box-shadow:0 0 0 1px #33312B;padding:24px 26px;">
+        <div style="font-size:16px;font-weight:600;margin-bottom:8px;">Distress at small size</div>
+        <div style="font-size:13.5px;line-height:1.6;color:#8A877E;">The speckle isn't in the export at all. Send the layered original, or confirm the clean lockup is the master and the distress is per-artwork.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</x-dc>
+
+
+</body></html>
