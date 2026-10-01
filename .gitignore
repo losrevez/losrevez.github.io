@@ -1,0 +1,24 @@
+node_modules/
+dist/
+test/screens/
+# Generated test reports (re-created by npm run check / npm run lighthouse)
+test/lighthouse/
+test/check-report.json
+# macOS folder metadata, anywhere in the tree
+**/.DS_Store
+# Font files: keep new/converted fonts out of git until their web licence is confirmed.
+# (The fonts already tracked in assets/fonts/ are unaffected by this rule.)
+*.woff
+*.woff2
+fonts-local/
+# Original-name copies of the fonts (identical to the tracked files); not needed by the site.
+assets/fonts/Khand-Variable.ttf
+assets/fonts/Panchang-Variable.ttf
+assets/fonts/Pilat Wide Heavy.otf
+assets/fonts/SportyPro-BoldCD.otf
+assets/fonts/Technor-Variable.ttf
+assets/fonts/WhitneyCondensed-Medium.otf
+.venv-fonts/
+
+# Drop folder for raw uploads; processed copies live in assets/img/historia/
+in/

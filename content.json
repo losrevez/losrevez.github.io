@@ -1,0 +1,191 @@
+{
+  "site": {
+    "url": "https://losrevez.com/",
+    "lang": "es-CO",
+    "ogLocale": "es_CO",
+    "title": "Los Revéz | Rock desde Bogotá",
+    "description": "Abrimos el cierre de la Maratón de El Gallo de Radioacktiva con Kraken y Doctor Krápula. Dos sencillos en 2026.",
+    "ogDescription": "Abrimos el cierre de la Maratón de El Gallo de Radioacktiva con Kraken y Doctor Krápula.",
+    "jsonLdDescription": "Banda de rock de Bogotá. Abrimos el cierre de la Maratón de El Gallo de Radioacktiva junto a Kraken y Doctor Krápula.",
+    "ogImage": "assets/img/og-losrevez-1200x630.jpg",
+    "email": "losrevez@gmail.com",
+    "_metaNote": "title/description/ogDescription set per the head-meta brief, requested by Gonzalo 2026-09-30 (see CHANGELOG.md). jsonLdDescription keeps the previous text because the brief covers meta tags only."
+  },
+  "a11y": {
+    "_note": "Alt text is not in the approved copy. Pending approval (see README > Questions).",
+    "heroPhotoAlt": "Los Revéz"
+  },
+  "hero": {
+    "eyebrow": "Banda de rock de Bogotá",
+    "_eyebrowNote": "Approved 2026-09-30; taken from the meta description.",
+    "name": "Los Revéz",
+    "tagline": "Rock desde Latinoamérica. Contra todo pronóstico.",
+    "lead": "Abrimos el cierre de la Maratón de El Gallo de Radioacktiva, el 18 y 19 de septiembre de 2026, junto a Kraken y Doctor Krápula.",
+    "secondary": {
+      "label": "Escuchar",
+      "href": "#escucha"
+    },
+    "_buttonsNote": "Contratar button removed from hero and section 4 (approved 2026-09-30); Escuchar is the single action."
+  },
+  "banda": {
+    "id": "banda",
+    "heading": "LA BANDA",
+    "lead": "Somos Los Revéz. Hacemos rock desde Latinoamérica y cantamos sobre eso que piensas pero a veces no dices. A veces nos burlamos de nosotros mismos.",
+    "_membersNote": "Approved 2026-09-30 (option A): the first sentence of the original second paragraph, shown as a list. Same words; the joining commas and 'y' are dropped.",
+    "members": [
+      {
+        "name": "Diego Sáenz",
+        "role": "toca la batería"
+      },
+      {
+        "name": "Diego Correa",
+        "role": "canta"
+      },
+      {
+        "name": "Gonzalo Pizarro",
+        "role": "toca la guitarra"
+      }
+    ],
+    "detail": "Gonzalo y Diego Sáenz fundaron Pirañas en 2008; Los Revéz es el segundo proyecto que arrancan juntos. Diego Correa es fundador y líder de Los Cocoa.",
+    "_leadNote": "Shown one sentence per line (option C, approved 2026-09-30); words unchanged."
+  },
+  "historia": {
+    "id": "historia",
+    "heading": "LO QUE HA PASADO",
+    "items": [
+      {
+        "date": "27 de febrero de 2026",
+        "datetime": "2026-02-27",
+        "text": "Quiero Que Vengas, nuestro primer sencillo, con video dirigido por Brian Gálvez (Wow Studios).",
+        "image": "qqv-video"
+      },
+      {
+        "date": "Marzo y abril de 2026",
+        "datetime": "2026-03",
+        "text": "el lanzamiento llegó a televisión (RCN, Canal Trece, Citytv, Canal Uno, Cablenoticias, Canal Rumba, Telecafé) y a medios como La Opinión, Canal Trece y El Amplificador.",
+        "image": "tv"
+      },
+      {
+        "date": "14 de agosto de 2026",
+        "datetime": "2026-08-14",
+        "text": "Monstruo, nuestro segundo sencillo.",
+        "image": "monstruo"
+      },
+      {
+        "date": "3 de septiembre de 2026",
+        "datetime": "2026-09-03",
+        "text": "video lírico de Monstruo y visita a la cabina de El Gallo de Radioacktiva.",
+        "image": "radioacktiva"
+      },
+      {
+        "date": "18 y 19 de septiembre de 2026",
+        "datetime": "2026-09-18",
+        "text": "invitados por Radioacktiva, abrimos el cierre de la Maratón de El Gallo.",
+        "image": "maraton-flyer",
+        "featured": true
+      }
+    ],
+    "_imageNote": "'image' is a base name in assets/img/historia/ (made by scripts/timeline-images.mjs from the raw files in in/). null shows a placeholder. The item with featured:true is the large panel."
+  },
+  "escucha": {
+    "id": "escucha",
+    "heading": "ESCUCHA / MIRA",
+    "links": [
+      {
+        "label": "Quiero Que Vengas, video oficial",
+        "href": "https://www.youtube.com/watch?v=Szlm38LT_5A",
+        "kind": "video",
+        "song": "Quiero Que Vengas"
+      },
+      {
+        "label": "Monstruo, video lírico",
+        "href": "https://www.youtube.com/watch?v=PxtXKRMsTps",
+        "kind": "video",
+        "song": "Monstruo"
+      },
+      {
+        "label": "Quiero Que Vengas en Spotify",
+        "href": "https://open.spotify.com/track/41F0pWXboqxHT26Lb9PT59",
+        "kind": "audio",
+        "song": "Quiero Que Vengas"
+      },
+      {
+        "label": "Monstruo en Spotify",
+        "href": "https://open.spotify.com/track/3e7GgS65I3EDRVxQPlpQvu",
+        "kind": "audio",
+        "song": "Monstruo"
+      }
+    ],
+    "followLabel": "Síguenos",
+    "follow": [
+      {
+        "label": "Spotify",
+        "href": "https://open.spotify.com/artist/6fYQDQ6qRVZGsMLmicPu2P"
+      },
+      {
+        "label": "YouTube @LosRevezMusic",
+        "href": "https://www.youtube.com/@LosRevezMusic"
+      },
+      {
+        "label": "Instagram @losrevez",
+        "href": "https://www.instagram.com/losrevez/"
+      },
+      {
+        "label": "TikTok @losrevez",
+        "href": "https://www.tiktok.com/@losrevez"
+      }
+    ],
+    "covers": {
+      "Quiero Que Vengas": {
+        "name": "cover-qqv",
+        "alt": "Quiero Que Vengas"
+      },
+      "Monstruo": {
+        "name": "cover-monstruo",
+        "alt": "Monstruo"
+      }
+    },
+    "_displayNote": "Each link shows its song as the panel title and the rest of the label as small caps meta; the full label is the link's aria-label. Guillemets removed from all song names (approved 2026-09-30)."
+  },
+  "contratar": {
+    "id": "contacto",
+    "heading": "CONTACTO",
+    "printHeading": "CONTRATAR",
+    "_headingNote": "Web shows CONTACTO; the PDF keeps CONTRATAR (approved 2026-09-30).",
+    "before": "Escríbenos a ",
+    "email": "losrevez@gmail.com",
+    "_note": "Signature and the period after the email removed (approved 2026-09-30)."
+  },
+  "hidden": {
+    "_note": "Built but not rendered while enabled is false. Text is placeholder only.",
+    "enVivo": {
+      "enabled": false,
+      "id": "en-vivo",
+      "heading": "En vivo",
+      "paragraphs": [
+        "[PLACEHOLDER: texto pendiente de aprobación]"
+      ]
+    },
+    "diego": {
+      "enabled": false,
+      "id": "diego-saenz",
+      "heading": "Diego Sáenz",
+      "paragraphs": [
+        "[PLACEHOLDER: texto pendiente de aprobación]"
+      ]
+    },
+    "empresas": {
+      "enabled": false,
+      "id": "empresas",
+      "heading": "Empresas y eventos",
+      "paragraphs": [
+        "[PLACEHOLDER: texto pendiente de aprobación]"
+      ]
+    }
+  },
+  "footer": {
+    "_note": "Approved 2026-09-30. Social links reuse escucha.follow.",
+    "copyright": "© 2026 Los Revéz",
+    "location": "Bogotá, Colombia"
+  }
+}

@@ -1,0 +1,53 @@
+/* A4, one section per page, on-brand Ink ground. Used by index.html (@media print) and print.html. */
+@page{size:A4;margin:0;}
+html,body{background:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+body{overflow:visible;}
+.footer{display:none;}
+html{scroll-behavior:auto;}
+
+:is(.hero, main > .section.section){
+  box-sizing:border-box;
+  width:210mm;height:297mm;overflow:hidden;
+  break-after:page;page-break-after:always;
+  display:flex;flex-direction:column;justify-content:center;
+  padding:22mm 20mm;
+  position:relative;
+}
+main > .section:last-child{break-after:auto;page-break-after:auto;}
+:is(.hero, main > .section) .wrap{max-width:none;padding:0;}
+
+/* Hero page: photo top, plate below */
+body > .hero.hero{justify-content:flex-start;padding:0;}
+.hero .hero__photo{aspect-ratio:auto;height:128mm;max-height:none;flex:none;}
+.hero .hero__photo img{object-position:50% 25%;}
+.hero .hero__plate{padding:4mm 20mm 0;flex:1;}
+.hero__name img{width:105mm;}
+.hero__dateline{font-size:17pt;}
+.hero__lead{font-size:12.5pt;}
+.btn{min-height:0;padding:3.2mm 8mm;font-size:12pt;}
+
+.follow a{min-height:0;font-size:12.5pt;}
+
+/* On paper, show where each external link goes. */
+.song__links a{flex-wrap:wrap;}
+.song__links a[href^="http"]::after,
+.follow a[href^="http"]::after{
+  content:"\A" attr(href);white-space:pre-wrap;
+  font-family:var(--font-label);font-weight:400;font-size:9pt;letter-spacing:.5px;text-transform:none;
+  color:var(--text);
+}
+.follow{flex-direction:column;align-items:flex-start;gap:3mm;}
+.follow a{text-decoration:none;display:block;}
+
+/* Timeline on paper: no empty image slots; keep real images small. */
+.shot--empty{display:none;}
+
+/* Timeline page: four dates in one row; the Maratón panel as image | text. */
+.timeline{grid-template-columns:repeat(4,1fr);}
+.timeline li{padding:3.5mm 3.5mm 4mm;}
+.timeline .shot{margin:-3.5mm -3.5mm 3mm;}
+.timeline p{font-size:10pt;line-height:1.5;}
+.timeline__date{font-size:8.5pt;}
+.featured{margin-top:7mm;grid-template-columns:1fr 1fr;}
+.featured__body{padding:8mm;}
+.featured p{font-size:12pt;}

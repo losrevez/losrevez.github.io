@@ -1,0 +1,18 @@
+{
+  "name": "losrevez-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "images": "node scripts/images.mjs",
+    "pdf": "node build.mjs && node pdf.mjs",
+    "preview": "node scripts/serve.mjs 8080",
+    "check": "node scripts/check.mjs",
+    "lighthouse": "npx lighthouse http://localhost:8080/ --chrome-flags=--headless=new --only-categories=performance,accessibility,best-practices,seo --output=html --output=json --output-path=test/lighthouse/mobile"
+  },
+  "devDependencies": {
+    "lighthouse": "^13.5.0",
+    "puppeteer-core": "^25.12.0",
+    "sharp": "^0.35.5"
+  }
+}
