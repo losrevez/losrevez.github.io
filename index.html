@@ -192,13 +192,11 @@ a{color:inherit;}
 /* ---------- 01 La banda: lead left; members + history right ---------- */
 .banda{display:grid;gap:2rem 2.5rem;align-items:start;}
 @media (min-width:860px){.banda{grid-template-columns:1.35fr 1fr;}}
-.banda__lead{   /* statement: design system Whitney display (26px / 1.35), one sentence per line */
-  margin:0;padding-top:.375rem;max-width:24em;
-  font-size:1.375rem;line-height:1.35;color:var(--ink);
+.banda__lead{   /* same as the design system's hero paragraph ("Una carta al que…"): Whitney 16px / 1.6, max 500px */
+  margin:0;padding-top:.75rem;max-width:31.25rem;
+  font-size:var(--fs-body);line-height:1.6;color:var(--ink);
 }
-@media (min-width:768px){.banda__lead{font-size:1.625rem;}}
 .banda__lead span{display:block;text-wrap:balance;}
-.banda__lead span + span{margin-top:.15em;}
 .members{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink-line);}
 .members li{
   display:flex;flex-wrap:wrap;align-items:baseline;gap:.25rem .75rem;
